@@ -52,6 +52,6 @@ io.on('connection', (socket) => {
     });
 });
 
-const PORT = 5005; // Using a hardcoded port to avoid conflicts
+const PORT = process.env.PORT || 5005;
 
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
