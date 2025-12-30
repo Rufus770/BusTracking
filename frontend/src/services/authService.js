@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5005/api/auth'; // Adjust if your backend runs on a different port
+const API_URL = 'https://bus-tracking-backend-vwjm.onrender.com/api/auth'; // Adjust if your backend runs on a different port
 
 // Register a new student
 const registerStudent = (userData) => {

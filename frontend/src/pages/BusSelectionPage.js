@@ -41,8 +41,7 @@ const BusSelectionPage = () => {
 
         fetchBuses();
 
-        // Connect to WebSocket server
-        socketRef.current = io('http://localhost:5005'); // Adjust if your backend is elsewhere
+        socketRef.current = io('https://bus-tracking-backend-vwjm.onrender.com'); // Adjust if your backend is elsewhere
 
         return () => {
             // Disconnect socket and stop watching location on component unmount

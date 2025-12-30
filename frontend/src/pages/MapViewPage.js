@@ -22,7 +22,8 @@ const MapViewPage = () => {
 
     useEffect(() => {
         // Connect to WebSocket server
-        socketRef.current = io('http://localhost:5005');
+        const socket = io('https://bus-tracking-backend-vwjm.onrender.com');
+        socketRef.current = socket;
 
         // Join the room for the selected bus
         socketRef.current.emit('joinBusRoom', busId);
